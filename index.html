@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .navbar img {
+            aspect-ratio: 1 / 1;
+            width: 100%;
+            height: 3rem;
+            object-fit: cover;
+            mix-blend-mode: darken;
+        }
+        /* Parallax background */
+        .main-page {
+        background-image: url('https://fantastic-medovik-9cde22.netlify.app/audrone.jpg'); /* Your image URL */
+        width: 100%; /* Set height to 100% of the viewport height */
+        background-attachment: fixed; /* Fix the background */
+        background-size: cover; /* Cover the entire div */
+        background-position: center; /* Center the background image */
+        position: relative; /* Position relative for content overlay */
+        overflow: hidden; /* Prevent overflow */
+        
+        
+}
+        /* Content styling */
+        .content {
+            position: relative;
+            z-index: 1; /* Ensure content is above the background */
+        }
+        .main-page-2{
+      
+            background-color:white; /* Add your second image URL here */
+            height: 100vh; /* Set height to 100% of the viewport height */
+            background-attachment: fixed; /* Fix the background */
+            background-size: cover; /* Cover the entire div */
+            background-position: center; 
+            
+        }
+       .nav-2 a{
+            color: #dc3545 !important;
+       }
+    </style>
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-around gap-5 main-page" style="width: 100%;">
+        <nav class="navbar navbar-light bg-light" style="width: 100%;">
+            <div class="container d-flex justify-content-between flex-row">
+                <a class="navbar-brand" href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDyZ9FGwDDETeq8AJ8s8L8QxRu7CR3GgSTXw&s" alt="">
+                </a>
+                <div>
+                    <div class="navbar-nav d-flex justify-content-between flex-row gap-5 nav-main">
+                        <a class="nav-item nav-link active fw-bold disabled" href="#">Search For: </a>
+                        <a class="nav-item nav-link active text-white" href="#">Students</a>
+                        <a class="nav-item nav-link " href="#">Alumni</a>
+                        <a class="nav-item nav-link " href="#">Faculty</a>
+                        <a class="nav-item nav-link " href="#">Families</a>
+                        <a class="nav-item nav-link " href="#">Visitors</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid main-page">
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center content">
+            <div class="nav2 mb-4">
+                <div class="row">
+                    <div class="navbar-nav d-flex justify-content-center flex-row gap-5 nav-2">
+                        <a class="nav-item nav-link  active fw-bolder display-8" href="#">Students</a>
+                        <a class="nav-item nav-link fw-bolder display-8" href="#">Alumni</a>
+                        <a class="nav-item nav-link fw-bolder display-8" href="#">Faculty</a>
+                        <a class="nav-item nav-link fw-bolder display-8" href="#">Families</a>
+                        <a class="nav-item nav-link fw-bolder display-8" href="#">Visitors</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row vh-100">
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <h1 class="text-light fw-bolder display-1">Air University</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid main-page-2 vh-100 d-flex flex-column justify-content-center align-items-center">
+       
+            <div class="nav2 mb-4">
+                <div class="col-md-12 d-flex flex-column justify-content-center align-items-center mt-5">
+                <h1 class="text-primary fw-bolder display-2">A Societal Mission</h1>
+                    <div class="container">
+                <p class="fs-2 text-center mt-3">
+                    Stanford was founded almost 150 years ago on a bedrock of societal purpose. Our mission is to contribute to the world by educating students for lives of leadership and contribution with integrity; advancing fundamental knowledge and cultivating creativity; leading i
+                    n pioneering research for effective clinical therapies; and accelerating solutions and amplifying their impact.
+                </p>
+
+                
+            </div>
+            <button type="button" class="btn btn-lg btn-primary mt-3 " style="height: 3rem; width: 20rem;">Check Out</button>
+              
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex flex-column align-items-center mt-5 vh-100">
+        <h1 class="text-primary fw-bolder display-2">Academics</h1>
+        <p class="fs-2 text-center mt-3">
+            Preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world
+        </p>
+       
+        <div class="row mt-5">
+            <div class="col-sm-4">
+                <div class="card text-center ">
+                    <img src="https://www.stanford.edu/wp-content/uploads/2023/05/20230418_Grayson_Armour_95A0681-2.jpg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary btn-lg">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card text-center">
+                    <img src="https://www.stanford.edu/wp-content/uploads/2023/03/20220714Hopkins_Marine_Station_N6A7270-1-2048x1366.jpg" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary btn-lg">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card text-center">
+                    <img src="https://www.stanford.edu/wp-content/uploads/2023/03/20211117_Elizabeth_Reese_N6A0441-2048x1366.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary  btn-lg">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid main-page-2 vh-100 d-flex flex-column justify-content-center align-items-center">
+       
+        <div class="nav2 mb-4">
+            <div class="col-md-12 d-flex flex-column justify-content-center align-items-center mt-5">
+            <h1 class="text-primary fw-bolder display-2">Research</h1>
+                <div class="container">
+                    <p class="fs-2 text-center mt-3">
+                        Driving discoveries vital to our world, our health, and our intellectual life
+                    </p>
+
+            
+        </div>
+        <button type="button" class="btn btn-lg btn-primary mt-3 " style="height: 3rem; width: 20rem;">Check Out</button>
+          
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
