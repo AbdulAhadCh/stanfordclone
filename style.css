@@ -1,0 +1,243 @@
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+        .navbar-img {
+            aspect-ratio: 4/3;
+            width: 100%;
+            height: 3rem;
+            object-fit: cover;
+          
+        }
+
+        .nav2 {
+            font-size: large;
+            font-weight: bold;
+        }
+
+        /* Parallax background */
+        .main-page {
+            background-image: url('https://wpassets.graana.com/blog/wp-content/uploads/2023/05/Air-Univ.jpg.webp'); /* Add your image URL here */
+            height: 100vh; /* Set height to 100% of the viewport height */
+            background-attachment: fixed; /* Fix the background */
+            background-size: cover; /* Cover the entire div */
+            background-position: center; /* Center the background image */
+            border-bottom: 2.3rem solid#0B5ED7 ;
+        }
+
+        /* Content styling */
+        .content {
+            position: relative;
+            z-index: 1; /* Ensure content is above the background */
+        }
+        .main-page-2{
+      
+            background-color:white; /* Add your second image URL here */
+            height: 100vh; /* Set height to 100% of the viewport height */
+            background-attachment: fixed; /* Fix the background */
+            background-size: cover; /* Cover the entire div */
+            background-position: center; 
+            
+            
+        }
+        .nav-2{
+            top: 9vh;
+        }
+        .nav-1 {
+      background-color: transparent; /* White transparent background */
+      padding: 0px ;/* Smaller padding */
+       /* Smaller font size */
+      z-index: 2;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-1 .nav-link {
+      color: white; /* Primary blue color for links */
+      font-size: 1.0rem;
+    }
+
+    .nav-1 .nav-link.active {
+      color: #f8f9fa; /* Darker blue for active link */
+    }
+
+    /* Styling for the second navbar */
+    .nav-2 {
+      background-color: transparent;/* White transparent background */
+      padding: 6px ; /* Larger padding */
+      font-size: 2.6rem; /* Larger font size */
+      z-index: 2; /* Slightly lower z-index */
+      transition: background-color 0.3s ease;
+      
+    }
+
+    .nav-2 .nav-link {
+      color: white; /* White color for links */
+      font-size: 1.3rem; /* Larger font size for icons */
+      transition: color 0.3s ease;
+    }
+
+    .nav-2 .nav-link.active {
+      color: #f8f9fa; /* Light color for active link */
+    }
+    .text {
+    color: #0B5ED7; /* Text fields in blue */
+}
+.text:hover{
+    color: #0a449c; /* Text fields in blue */
+    cursor: pointer;
+}
+
+.separator {
+    color: black; /* Separators in black */
+    margin: 0 4px; /* Adds spacing around separators */
+}
+.academics-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://news.stanford.edu/__data/assets/image/0019/152173/Tadashi_Tokieda_6.jpg');
+    position: relative; /* Ensure the container is positioned */
+    overflow: hidden; /* Prevent overflow of the blur effect */
+}
+
+.academics-image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit; /* Inherit the background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(0px); /* Default filter, no blur */
+    transition: filter 0.3s ease; /* Smooth transition */
+}
+
+/* Class to apply blur effect */
+.academics-image-container.blur::before {
+    filter: blur(10px); /* Apply blur effect */
+}
+
+
+
+
+.academics-image {
+    width: 240px; /* Fixed width for the image */
+    height: 220px; /* Fixed height to keep it circular */
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative; /* Ensure the image is above the blurred background */
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateY(-100%);
+   
+}
+
+.academics-image-container-content{
+    z-index: 0;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateY(-100%);
+    }
+.upcoming-cards .card{
+    min-height: 30rem;
+    border-radius: 0px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 0px;
+    width: 18rem;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.upcoming-cards .card img{
+   
+    border-radius: 0px;
+}
+.upcoming-cards .card:hover  {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.upcoming-cards .card:hover img {
+    transform: scale(1.05); /* Slight zoom on the image */
+    transition: transform 0.5s ease; /* Smooth transition for the zoom */
+    cursor: pointer;
+}
+.health-care .card{
+    border: 0px;
+    border-radius: 0px;
+   
+}
+.health-care .card img{
+    border: 0px;
+    border-radius: 0px;
+}
+.health-care .card a{
+ padding: 0%;
+}
+
+
+
+.student-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://news.stanford.edu/__data/assets/image/0019/152272/Yannie_Tan_3.jpg');
+    position: relative; /* Ensure the container is positioned */
+    overflow: hidden; /* Prevent overflow of the blur effect */
+}
+
+.student-image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit; /* Inherit the background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(0px); /* Default filter, no blur */
+    transition: filter 0.3s ease; /* Smooth transition */
+}
+
+/* Class to apply blur effect */
+.student-image-container.blur::before {
+    filter: blur(10px); /* Apply blur effect */
+}
+
+
+
+
+.student-image {
+    width: 240px; /* Fixed width for the image */
+    height: 220px; /* Fixed height to keep it circular */
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative; /* Ensure the image is above the blurred background */
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateY(-100%);
+   
+}
+
+.student-image-container-content{
+    z-index: 0;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateY(-100%);
+    }
+
+
+
+
+

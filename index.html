@@ -5,91 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-        .navbar img {
-            aspect-ratio: 1 / 1;
-            width: 100%;
-            height: 3rem;
-            object-fit: cover;
-            mix-blend-mode: darken;
-        }
-        /* Parallax background */
-        .main-page {
-        background-image: url('https://fantastic-medovik-9cde22.netlify.app/audrone.jpg'); /* Your image URL */
-        width: 100%; /* Set height to 100% of the viewport height */
-        background-attachment: fixed; /* Fix the background */
-        background-size: cover; /* Cover the entire div */
-        background-position: center; /* Center the background image */
-        position: relative; /* Position relative for content overlay */
-        overflow: hidden; /* Prevent overflow */
-        
-        
-}
-        /* Content styling */
-        .content {
-            position: relative;
-            z-index: 1; /* Ensure content is above the background */
-        }
-        .main-page-2{
-      
-            background-color:white; /* Add your second image URL here */
-            height: 100vh; /* Set height to 100% of the viewport height */
-            background-attachment: fixed; /* Fix the background */
-            background-size: cover; /* Cover the entire div */
-            background-position: center; 
-            
-        }
-       .nav-2 a{
-            color: #dc3545 !important;
-       }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-fluid d-flex justify-content-around gap-5 main-page" style="width: 100%;">
-        <nav class="navbar navbar-light bg-light" style="width: 100%;">
-            <div class="container d-flex justify-content-between flex-row">
+    <div class="container-fluid main-page">
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center content ">
+            <div class="container-fluid d-flex justify-content-around flex-row align-items-center nav-1 fixed-top">
                 <a class="navbar-brand" href="#">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDyZ9FGwDDETeq8AJ8s8L8QxRu7CR3GgSTXw&s" alt="">
+                    <img class="navbar-img" src="kindpng_6385644.png" alt="">
                 </a>
                 <div>
-                    <div class="navbar-nav d-flex justify-content-between flex-row gap-5 nav-main">
-                        <a class="nav-item nav-link active fw-bold disabled" href="#">Search For: </a>
-                        <a class="nav-item nav-link active text-white" href="#">Students</a>
-                        <a class="nav-item nav-link " href="#">Alumni</a>
-                        <a class="nav-item nav-link " href="#">Faculty</a>
-                        <a class="nav-item nav-link " href="#">Families</a>
-                        <a class="nav-item nav-link " href="#">Visitors</a>
+                    <div class="navbar-nav d-flex justify-content-between flex-row gap-5">
+                        <a class="nav-item nav-link  active fw-bold disabled text-white text-nowrap" href="#">Search For: </a>
+                        <a class="nav-item nav-link  active text-white" href="#">Students</a>
+                        <a class="nav-item nav-link  text-white " href="#">Alumni</a>
+                        <a class="nav-item nav-link  text-white" href="#">Faculty</a>
+                        <a class="nav-item nav-link  text-white" href="#">Families</a>
+                        <a class="nav-item nav-link  text-white" href="#">Visitors</a>
                     </div>
                 </div>
             </div>
-        </nav>
-    </div>
+            <!-- Second Navbar -->
+            <div class="navbar-nav d-flex justify-content-center align-items-center flex-row gap-5 fixed-top nav-2">
+                <a class="nav-item nav-link nav-2-links link-secondary active" href="#">Students</a>
+                <a class="nav-item nav-link nav-2-links link-secondary" href="#">Alumni</a>
+                <a class="nav-item nav-link nav-2-links link-secondary" href="#">Faculty</a>
+                <a class="nav-item nav-link nav-2-links link-secondary" href="#">Families</a>
+                <a class="nav-item nav-link nav-2-links link-secondary" href="#">Visitors</a>
+            </div>
 
-    <div class="container-fluid main-page">
-        <div class="container-fluid d-flex flex-column justify-content-center align-items-center content">
-            <div class="nav2 mb-4">
-                <div class="row">
-                    <div class="navbar-nav d-flex justify-content-center flex-row gap-5 nav-2">
-                        <a class="nav-item nav-link  active fw-bolder display-8" href="#">Students</a>
-                        <a class="nav-item nav-link fw-bolder display-8" href="#">Alumni</a>
-                        <a class="nav-item nav-link fw-bolder display-8" href="#">Faculty</a>
-                        <a class="nav-item nav-link fw-bolder display-8" href="#">Families</a>
-                        <a class="nav-item nav-link fw-bolder display-8" href="#">Visitors</a>
-                    </div>
-                </div>
-            </div>
             <div class="row vh-100">
                 <div class="col-md-12 d-flex justify-content-center align-items-center">
-                    <h1 class="text-light fw-bolder display-1">Air University</h1>
+                    <h1 class="text-light fw-bolder display-1 air-text" style="position: fixed;">Air University</h1>
                 </div>
             </div>
+           
         </div>
     </div>
 
-
     <div class="container-fluid main-page-2 vh-100 d-flex flex-column justify-content-center align-items-center">
        
-            <div class="nav2 mb-4">
+            <div class="mb-4">
                 <div class="col-md-12 d-flex flex-column justify-content-center align-items-center mt-5">
                 <h1 class="text-primary fw-bolder display-2">A Societal Mission</h1>
                     <div class="container">
@@ -106,66 +62,378 @@
         </div>
     </div>
 
-    <div class="container d-flex flex-column align-items-center mt-5 vh-100">
-        <h1 class="text-primary fw-bolder display-2">Academics</h1>
-        <p class="fs-2 text-center mt-3">
-            Preparing students to make meaningful contributions to society as engaged citizens and leaders in a complex world
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-center mt-5 ">
+        <h1 class="text-primary fw-bolder display-2 text-nowrap m-4">Academics</h1>
+        <div class="container">
+        <p class="fs-2 text-center text-nowrap mt-3 m-4">
+            Preparing students to make meaningful contribution
         </p>
-       
+    
         <div class="row mt-5">
-            <div class="col-sm-4">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
                 <div class="card text-center ">
                     <img src="https://www.stanford.edu/wp-content/uploads/2023/05/20230418_Grayson_Armour_95A0681-2.jpg" class="card-img-top" alt="Image 1">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary btn-lg">Go somewhere</a>
+                        <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card text-center">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card text-center ">
                     <img src="https://www.stanford.edu/wp-content/uploads/2023/03/20220714Hopkins_Marine_Station_N6A7270-1-2048x1366.jpg" class="card-img-top" alt="Image 2">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary btn-lg">Go somewhere</a>
+                        <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card text-center">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card text-center ">
                     <img src="https://www.stanford.edu/wp-content/uploads/2023/03/20211117_Elizabeth_Reese_N6A0441-2048x1366.jpg" class="card-img-top" alt="Image 3">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary  btn-lg">Go somewhere</a>
+                        <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+
+    </div>
+    <div class="row mt-5 d-flex flex-row justify-content-center align-items-center">
+        <h2 class="fw-bold text-center">Seven schools in which to pursue your passions</h2>
+        <p class="fs-4 text-center mt-3">
+            <span class="text">Medicine</span> <span class="separator">|</span>
+            <span class="text">Law</span> <span class="separator">|</span>
+            <span class="text">Humanities & Sciences</span> <span class="separator">|</span>
+            <span class="text">Engineering</span> <span class="separator">|</span>
+            <span class="text">Education</span> <span class="separator">|</span>
+            <span class="text">Sustainability</span> <span class="separator">|</span>
+            <span class="text">Business</span>
+        </p>
+        
+        
+        
+    </div>
+    <button type="button" class="btn btn-lg btn-primary mt-5 " style="height: 3rem; width: 20rem;">Check Out</button>
+    <div class="row  mt-5 academics-image-container d-flex flex-column justify-content-center align-items-center blur " id="academics-content-section" style="width: 100%; ">
+        <img class="academics-image  " src="https://www.stanford.edu/wp-content/uploads/2024/08/Tadashi-homesite-profile-240x240.png" width="100%" alt="">
+        <div class="container d-flex flex-column justify-content-center align-items-center academics-image-container-content " style="width: 70%;">
+            <p class="fs-2 text-center mt-3 text-white">
+                “When I ‘decided’ to become a mathematician, it was not a decision. I could not do otherwise. You don’t decide to fall in love with somebody. It just happens.”
+            </p>
+            <h4 class="fw-bold text-white ">
+                Tadashi Tokied
+            </h4>
+            <p class="fs-6 fst-italic text-center  text-white">
+                Professor (Teaching) of Mathematics
+            </p>
+        </div>
+    </div>
+    
+
+</div>
+    
+
+ <!-- Research Section -->
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center mt-5 research-section">
+   
+    <div class="container mb-4 text-center">
+        <h1 class="text-primary fw-bolder display-2">Research</h1>
+        <p class="fs-2 mt-5">
+            Driving discoveries vital to our world, our health, and our intellectual life
+        </p>
+    </div>
+
+    <!-- Statistics Row (Full Width) -->
+    <div class="row w-100 d-flex justify-content-center align-items-center mt-3 text-nowrap" style="border-top: 0.4px solid black; border-bottom: 0.4px solid black; padding: 0;">
+        <div class="col-12 col-md-4 px-4 pt-1">
+            <h1 class="fw-bold text-center">15 Institutes</h1>
+            <p class="fs-4 text-center mt-3">Cross interdisciplinary boundaries</p>
+        </div>
+        <div class="col-12 col-md-4 px-4 pt-1">
+            <h1 class="fw-bold text-center">20 Libraries</h1>
+            <p class="fs-4 text-center mt-3">Hold over 12 million items</p>
+        </div>
+        <div class="col-12 col-md-4 px-4 pt-1">
+            <h1 class="fw-bold text-center">$1.98 Billion</h1>
+            <p class="fs-4 text-center mt-3">Sponsored research budget</p>
+        </div>
+    </div>
+    <button type="button" class="btn btn-lg btn-primary mt-5 " style="height: 3rem; width: 20rem;">Check Out</button>
+
+</div>
+ <!-- Upcoming Events Section -->
+ <div class="container-fluid d-flex flex-column align-items-center justify-content-center mt-5 ">
+    <h1 class="text-primary fw-bolder display-2 text-nowrap m-4">Upcoming Events</h1>
+    
+    <div class="row mt-5 upcoming-cards">
+        <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="card text-center ">
+                <img src="https://localist-images.azureedge.net/photos/47968374647782/square_300@2x/2b2bc4291c09a568cf0d638fbdca6a1901453df8.jpg" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <h3 class="card-title text-start" style="color:#0B5ED7 ;">Exhibition</h3>
+                    <p class="card-text text-start fw-bold ">With supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text text-start ">4:00 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="card text-center ">
+                <img src="https://localist-images.azureedge.net/photos/47783314380579/square_300@2x/27b488dcf53d6c80b3ec9f5b3e2d4f39f0c8162d.jpg" class="card-img-top" alt="Image 2">
+                <div class="card-body">
+                    <h3 class="card-title text-start" style="color:#0B5ED7 ;">Exhibition</h3>
+                    <p class="card-text text-start fw-bold">With supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text text-start ">4:00 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="card text-center ">
+                <img src="https://localist-images.azureedge.net/photos/47729467354012/square_300@2x/831dfd618913b32f081bbd809068eb5e7067a5a6.jpg" class="card-img-top" alt="Image 3">
+                <div class="card-body">
+                    <h3 class="card-title text-start" style="color:#0B5ED7 ;">Exhibition</h3>
+                    <p class="card-text text-start fw-bold">With supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text text-start ">4:00 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="card text-center ">
+                <img src="https://localist-images.azureedge.net/photos/47978476619625/square_300@2x/bb3cac39ae1f312d948c373a1d32402b55b05a00.jpg" class="card-img-top" alt="Image 4">
+                <div class="card-body">
+                    <h3 class="card-title text-start" style="color:#0B5ED7 ;">Exhibition</h3>
+                    <p class="card-text text-start fw-bold">With supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text text-start ">4:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- HealthCare Section -->
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-center mt-5 health-care">
+        <h1 class="text-primary fw-bolder display-2 text-nowrap m-4"> Health Care</h1>
+        <div class="row mt-5">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card text-start ">
+                    <img src="https://www.stanford.edu/wp-content/uploads/2022/04/Health-care-1.jpg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">Air Medicine</h4>
+                        <p class="card-text">Leading a worldwide revolution in precision health through biomedical research, education, and clinical enterprises.</p>
+                        <a class="nav-item nav-link fw-bold " href="#">Air Medicine>                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card text-start ">
+                    <img src="https://www.stanford.edu/wp-content/uploads/2022/04/Health-care-2-1499x999.jpg" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">Air Health Care</h4>
+                        <p class="card-text">Leading a worldwide revolution in precision health through biomedical research, education, and clinical enterprises.</p>
+                        <a class="nav-item nav-link fw-bold " href="#">Air Health Care></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card text-start ">
+                    <img src="https://www.stanford.edu/wp-content/uploads/2022/04/Health-care-3.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">Air Children's HealthCare</h4>
+                        <p class="card-text">Leading a worldwide revolution in precision health through biomedical research, education, and clinical enterprises.</p>
+                        <a class="nav-item nav-link fw-bold " href="#">Air Children's HealthCare></a>
                     </div>
                 </div>
             </div>
             
         </div>
+        <button type="button" class="btn btn-lg btn-primary mt-5 " style="height: 3rem; width: 20rem;">Check Out</button>
+
+    </div></div> 
+ <!-- StudentImage Section -->
+    <div class="row  mt-5 student-image-container d-flex flex-column justify-content-center align-items-center blur flex-nowrap" id="student-content-section" style="width: 100%; ">
+        <img class="student-image img-fluid " src="https://www.stanford.edu/wp-content/uploads/2024/08/yannie-240x240.png" width="100%" alt="">
+        <div class="container d-flex flex-column justify-content-center align-items-center student-image-container-content " style="width: 70%;">
+            <p class="fs-2 text-center mt-3 text-white">
+                “I think about all the projects that students throw themselves at quarter after quarter, just really expanding and stretching their minds. … Stanford allows you to experience evolutions of yourself.”
+            </p>
+            <h4 class="fw-bold text-white ">
+                Yannie Tan
+            </h4>
+            <p class="fs-6 fst-italic text-center  text-white">
+                Class of 2024
+            </p>
+        </div>
     </div>
 
-
-
-    <div class="container-fluid main-page-2 vh-100 d-flex flex-column justify-content-center align-items-center">
-       
-        <div class="nav2 mb-4">
-            <div class="col-md-12 d-flex flex-column justify-content-center align-items-center mt-5">
-            <h1 class="text-primary fw-bolder display-2">Research</h1>
-                <div class="container">
-                    <p class="fs-2 text-center mt-3">
-                        Driving discoveries vital to our world, our health, and our intellectual life
-                    </p>
-
+     <!-- CampusLife Section -->
+     <div class="container-fluid d-flex flex-column align-items-center justify-content-center mt-5 health-care">
+        <div class="container mb-4 text-center">
+            <h1 class="text-primary fw-bolder display-2">Campus life</h1>
+            <p class="fs-2 mt-5">
+                Building a vibrant community of creative and accomplished people from around the world
+            </p>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card text-start ">
+                    <img src="https://www.stanford.edu/wp-content/uploads/2022/04/Campus-life-1-1499x940.jpg" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">Student Life</h4>
+                        <p class="card-text">Leading a worldwide revolution in precision health through biomedical research, education, and clinical enterprises.</p>
+                        <a class="nav-item nav-link fw-bold " href="#">Student Life >                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card text-start ">
+                    <img src="https://www.stanford.edu/wp-content/uploads/2022/04/Campus-life-2-1499x940.jpg" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">Art & Culture</h4>
+                        <p class="card-text">Leading a worldwide revolution in precision health through biomedical research, education, and clinical enterprises.</p>
+                        <a class="nav-item nav-link fw-bold " href="#">Art & Culture ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 mb-4">
+                <div class="card text-start ">
+                    <img src="https://www.stanford.edu/wp-content/uploads/2022/04/Campus-life-3-1499x940.jpg" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <h4 class="card-title fw-bold">Recreation & Wellness</h4>
+                        <p class="card-text">Leading a worldwide revolution in precision health through biomedical research, education, and clinical enterprises.</p>
+                        <a class="nav-item nav-link fw-bold " href="#">Recreation & Wellness></a>
+                    </div>
+                </div>
+            </div>
             
         </div>
-        <button type="button" class="btn btn-lg btn-primary mt-3 " style="height: 3rem; width: 20rem;">Check Out</button>
-          
+        <button type="button" class="btn btn-lg btn-primary mt-5 " style="height: 3rem; width: 20rem;">Check Out</button>
+
+    </div></div> 
+
+
+
+
+
+    <!--Footer-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-2 mb-4">
+
+            </div>
+            <div class="col-12 col-sm-2 mb-4">
+
+            </div>
+            <div class="col-12 col-sm-2 mb-4">
+
+            </div>
+            <div class="col-12 col-sm-2 mb-4">
+
+            </div>
+            <div class="col-12 col-sm-2 mb-4">
+
+            </div>
+            <div class="col-12 col-sm-2 mb-4">
+
+            </div>
+
+            </div>
         </div>
     </div>
-</div>
+    
+
+
+
+
+<script>
+
+    const mainPage = document.querySelector('.main-page');
+    const airText = document.querySelector('.air-text');
+    const nav1 = document.querySelector('.nav-1');
+    const nav2 = document.querySelector('.nav-2');
+    const nav2Links = document.querySelectorAll('.nav-2-links');
+    
+    document.addEventListener('scroll',function(){
+        if(window.scrollY>mainPage.offsetHeight){
+            
+            nav1.style.backgroundColor = '#0B5ED7';
+            nav2.style.backgroundColor = 'white'
+            nav2.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.5)';
+            nav2Links.forEach(link => {
+            link.style.color = 'black';
+        });
+
+        }
+        else{
+            
+            nav1.style.backgroundColor = 'transparent';
+            nav2.style.backgroundColor = 'transparent'
+            nav2.style.boxShadow = 'none ';
+            nav2Links.forEach(link=>{
+                link.style.color = 'white';
+            })
+        }
+
+
+        const scrollRatio = window.scrollY / mainPage.offsetHeight;
+    if (scrollRatio > 0.5) {
+        airText.style.opacity = '0';  // Make airText invisible when half the page is scrolled
+    } else {
+        airText.style.opacity = '1';  // Make airText visible when less than half the page is scrolled
+    }
+        
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const academicsSection = document.getElementById('academics-content-section');
+    const academicsImage = document.querySelector('.academics-image');
+    const academicsContent = document.querySelector('.academics-image-container-content');
+
+    const studentSection = document.getElementById('student-content-section');
+    const studentImage = document.querySelector('.student-image');
+    const studentContent = document.querySelector('.student-image-container-content');
+
+    // Create an IntersectionObserver instance
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            const target = entry.target;
+
+            if (entry.isIntersecting) {
+                console.log('Element is in view');
+                // When the section is in view, show the target and apply the blur
+                target.style.opacity = '1';
+                target.style.transform = 'translateY(0%)';
+                // Add the 'blur' class to the section to apply blur to ::before
+                academicsSection.classList.add('blur');
+                studentSection.classList.add('blur');
+            } else {
+                console.log('Element is out of view');
+                // When the section is out of view, hide the target and remove the blur
+                target.style.opacity = '0';
+                 target.style.transform = 'translateY(-100%)';
+                // Remove the 'blur' class to reset the filter on ::before
+                studentSection.classList.remove('blur');
+            }
+        });
+    }, {
+        root: null, // Use the viewport as the root
+        rootMargin: '0px',
+        threshold: 0.1 // 10% of the section must be visible
+    });
+
+    // Observe the sections
+    observer.observe(academicsContent);
+    observer.observe(academicsImage);
+
+    observer.observe(studentContent);
+    observer.observe(studentImage);
+});
+
+</script>
 
 </body>
 </html>
