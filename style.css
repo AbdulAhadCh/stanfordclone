@@ -19,7 +19,7 @@
 
         /* Parallax background */
         .main-page {
-            background-image: url('https://wpassets.graana.com/blog/wp-content/uploads/2023/05/Air-Univ.jpg.webp'); /* Add your image URL here */
+            background-image: url('345222689_174744541849118_2600893454770651572_n.jpg'); /* Add your image URL here */
             height: 100vh; /* Set height to 100% of the viewport height */
             background-attachment: fixed; /* Fix the background */
             background-size: cover; /* Cover the entire div */
@@ -235,6 +235,37 @@
     opacity: 0;
     transition: transform 0.5s ease, opacity 0.5s ease;
     transform: translateY(-100%);
+    }
+
+    .cropped-video {
+        width: 100%;        /* Adjust width as needed */
+        object-fit: cover;  /* This crops the video to fill the area */
+        object-position: center;  /* Adjusts the video's position in the cropped area */
+       height: 100vh;
+    }
+    .social-media{
+        background-color: #F2F4F7;
+    }
+    .social-media i{
+        color: rgba(0, 0, 0, 0.658);
+        padding: 1rem;
+    }
+    .footer-row h4{
+        color: #0B5ED7;
+    }
+    .footer-row button{
+        background-color: white;
+        padding: 0.4rem;
+        border: 2px solid black;
+        transition: 0.2s ease-in-out;
+    }
+    .footer-row button:hover{
+        color: #0B5ED7;
+        border: 2px solid #0B5ED7; 
+        box-shadow: 0 0 1px 1px #0a449c, 0 0 3px 3px #0B5ED7;
+    }
+    footer{
+        background-color: #0a449c !important;
     }
 
 
